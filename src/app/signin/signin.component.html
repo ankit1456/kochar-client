@@ -1,0 +1,25 @@
+<section class="login">
+  <div class="login_box">
+    <div class="left">
+      <div class="contact">
+        <form [formGroup]="signinForm" (ngSubmit)="signin()">
+          <h3>SIGN IN</h3>
+          <input formControlName="email" type="email" placeholder="Email" />
+          <input
+            formControlName="password"
+            type="password"
+            placeholder="Password"
+          />
+          <button class="submit">Sign In</button>
+        </form>
+        <a class="newUser" routerLink="/signup">New User? Create Account</a>
+      </div>
+    </div>
+    <div class="right">
+      <div class="right-text">
+        <h2>Kochar Tech</h2>
+        <h6>ENHANCING CUSTOMER EXPERIENCE THROUGH TECHNOLOGY</h6>
+      </div>
+    </div>
+  </div>
+</section>
